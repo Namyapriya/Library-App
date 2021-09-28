@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, Image } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 
-import TransactionScreen from './screens/BookTransactionScreen';
-import SearchScreen from './screens/SearchScreen';
+import TransactionScreen from 'BookTransactionScreen';
+import SearchScreen from '.SearchScreen';
 
 export default class App extends React.Component {
   render(){
@@ -28,7 +28,7 @@ const TabNavigator = createBottomTabNavigator({
       if(routeName === "Transaction"){
         return(
           <Image
-          source={require("./assets/book.png")}
+          source={require("book.png")}
           style={{width:40, height:40}}
         />
         )
@@ -37,7 +37,7 @@ const TabNavigator = createBottomTabNavigator({
       else if(routeName === "Search"){
         return(
           <Image
-          source={require("./assets/searchingbook.png")}
+          source={require(".searchingbook.png")}
           style={{width:40, height:40}}
         />)
         
