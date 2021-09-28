@@ -7,7 +7,7 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import db from '../config';
+import db from 'config';
 import { ScrollView } from 'react-native-gesture-handler';
 
 export default class Searchscreen extends React.Component {
