@@ -12,7 +12,7 @@ import {
 import * as Permissions from 'expo-permissions';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 import firebase from 'firebase';
-import db from '../config.js';
+import db from 'config.js';
 
 export default class TransactionScreen extends React.Component {
   constructor() {
@@ -228,7 +228,7 @@ export default class TransactionScreen extends React.Component {
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
           <View>
             <Image
-              source={require('../assets/booklogo.jpg')}
+              source={require('booklogo.jpg')}
               style={{ width: 200, height: 200 }}
             />
             <Text style={{ textAlign: 'center', fontSize: 30 }}>Wily</Text>
